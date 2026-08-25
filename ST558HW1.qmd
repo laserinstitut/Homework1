@@ -1,0 +1,41 @@
+---
+title: "ST558HW1"
+format: html
+editor: visual
+---
+
+#### Question responses
+
+-   What do you think being a data scientist is about?
+
+Being a data scientist is using data to understand complex problems and make better decisions. It involves much more than coding or building machine learning models. A data scientist needs to ask the right questions, determine whether the available data can actually answer them, choose appropriate statistical or computational methods, and critically evaluate the results. Just as importantly, data scientists need to translate those results into meaningful insights that other people can understand and use. Ultimately, data science combines statistics, programming, and domain knowledge to turn messy data into useful evidence while recognizing the uncertainty and limitations behind the conclusions.
+
+-    What differences/similarities do you see between data scientists and statisticians?
+
+I think data scientists and statisticians have a lot in common because both are trying to use data to understand what is happening and answer meaningful questions. The biggest difference I see is in what they tend to focus on. Statisticians usually have a stronger emphasis on statistical theory, inference, uncertainty, and making sure the conclusions are actually supported by the data. Data scientists often use a broader set of tools, including programming, machine learning, databases, and visualization, and may work with larger or messier datasets. But in practice, the line between the two can be pretty blurry, and I think strong data science relies heavily on statistical thinking.
+
+-   How do you view yourself in relation to these two areas?
+
+I see myself somewhere between the two areas. My background in statistics has given me a strong foundation for thinking carefully about data, uncertainty, and what conclusions we can actually draw from an analysis. At the same time, I enjoy the broader, more applied side of data science, especially working with real world data, programming, machine learning, and translating results into something useful. I don’t really see statistics and data science as separate paths for me; I see statistical thinking as the foundation that makes me a better data scientist.
+
+#### Coding
+
+First, I create an object called \`y\` using the \`density()\` function. This calculates a kernel density estimate for the \`Petal.Width\` variable in the \`iris\` dataset.
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+Next, I examine the object to better understand what R created. The \`class()\` and \`typeof()\` functions identify the class and underlying type of the object, while \`str()\` shows its internal structure.
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+Finally, I plot the density object to visualize the distribution of petal widths in the iris dataset.
+
+```{r, echo=FALSE}
+plot(y)
+```
